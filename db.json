@@ -14,7 +14,8 @@
       "author": "Ray Bradbury",
       "cover": "https://images-na.ssl-images-amazon.com/images/I/71OFqSRFDgL.jpg",
       "about": "Enter a dystopian future where books with ideas are dangerous, controlled and burned.",
-      "variation": 1
+      "variation": 1,
+      "favorite": false
     },
     {
       "id": 3,
