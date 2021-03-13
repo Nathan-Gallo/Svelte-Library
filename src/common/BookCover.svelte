@@ -106,8 +106,8 @@
     <span
       class="cover"
       style={isValidUrl(book.cover) ? 'background-image: url(' + book.cover + ')' : ''}>
-      <span class="title">{book.title || ''}</span>
-      <span class="author">{book.author || ''}</span>
+      <span class="title">{isValidUrl(book.cover) ? "" : book.title || ""}</span>
+      <span class="author">{isValidUrl(book.cover) ? "" : book.author || ""}</span>
     </span>
   </a>
 {:else}
@@ -118,9 +118,9 @@
       class="cover"
       style={isValidUrl(book.cover) ? 'background-image: url(' + book.cover + ')' : ''}>
       <header>
-        <h2 class="title">{book.title || ''}</h2>
+        <h2 class="title">{isValidUrl(book.cover) ? "" : book.title || ""}</h2>
       </header>
-      <div class="author">{book.author || ''}</div>
+      <div class="author">{isValidUrl(book.cover) ? "" : book.author || ""}</div>
     </div>
   </div>
 {/if}
